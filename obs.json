@@ -1,0 +1,84 @@
+//http://localhost:5000/
+
+//api/platforms
+{'platforms': [
+        {'text': 'Facebook Ads', 'value': 'meta_ads'
+        },
+        {'text': 'Google Analytics', 'value': 'ga4'
+        },
+        {'text': 'TikTok', 'value': 'tiktok_insights'
+        }
+    ]
+}
+
+//api/accounts?platform=meta_ads
+{'accounts': [
+        {'id': '1', 'name': 'Jorginho', 'token': 'cf76cf576fc567fc56fc5c6f5cf67fc6'
+        },
+        {'id': '2', 'name': 'Ricardo Rocha', 'token': 'c48f4c8fc48fc4f8c4f5c45fc484c8f4'
+        },
+        {'id': '3', 'name': 'Ronaldão', 'token': 'cf4486c7f674c6c7f4c746cf989c8f4c'
+        },
+        {'id': '4', 'name': 'Mauro Silva', 'token': 'cf3ffc87cfc87c76fcf3f289f87c6ffc'
+        },
+        {'id': '5', 'name': 'Branco', 'token': 'cf4cf6567cf76fc56c5f643cf988c9cf'
+        }
+    ], 'pagination': {'current': 1, 'total': 3
+    }
+}
+
+//api/accounts?platform=ga4
+{'accounts': [
+        {'id': '1', 'name': 'Nalbert Bitencourt', 'token': 'a75b76b5a6aba444ab4ba654ba65b3ba7'
+        },
+        {'id': '2', 'name': 'Dante Amaral', 'token': 'ba75b76b5a67b5ba564ba654ba65b3ba7'
+        },
+        {'id': '3', 'name': 'Sérgio Dutra Santos', 'token': 'ba75b76ba4ba4bb4b44444ba4b44baba7'
+        }
+    ], 'pagination': {'current': 1, 'total': 2
+    }
+}
+
+//api/accounts?platform=tiktok_insights
+{'accounts': [
+        {'id': '1', 'name': 'Ana Patrícia Ramos', 'token': 'e8e54de67d5e78ed6e876ed87e6d8e74'
+        },
+        {'id': '2', 'name': 'Duda Lisboa', 'token': 'e8e54de67d5563ed6e876ed87e6d8e74'
+        }
+    ]
+}
+
+//api/fields?platform=meta_ads}
+{'fields': [
+        {'text': 'Clicks', 'value': 'clicks'
+        },
+        {'text': 'Impressions', 'value': 'impressions'
+        },
+        {'text': 'Spend', 'value': 'spend'
+        },
+        {'text': 'Cost Per Click', 'value': 'cpc'
+        },
+        {'text': 'Clickthrough Rate', 'value': 'ctr'
+        }
+    ], 'pagination': {'current': 1, 'total': 2
+    }
+}
+
+//api/fields?platform=ga4}
+{'fields': [
+        {'text': 'Ad Name', 'value': 'adName'
+        },
+        {'text': 'Impressions', 'value': 'impressions'
+        },
+        {'text': 'Spend', 'value': 'cost'
+        },
+        {'text': 'Country', 'value': 'region'
+        },
+        {'text': 'Clicks', 'value': 'clicks'
+        },
+        {'text': 'Status', 'value': 'status'
+        }
+    ]
+}
+//api/insights?platform=meta_ads&account=1&token=cf76cf576fc567fc56fc5c6f5cf67fc6&fields=clicks,spend,cpc
+{'insights': [{'clicks': 886, 'id': 1, 'spend': 6915.93}]}
