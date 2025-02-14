@@ -1,6 +1,6 @@
 # Desafio Stract
 
-Este projeto utiliza Python e Flask para tratar dados que vêm APIs da Stract e os apresentar no navegador em forma de tabelas.
+Este projeto utiliza Python e Flask para tratar dados que vêm de APIs da Stract e os apresentar no navegador em forma de tabelas.
 
 ## Pré-requisitos
 
