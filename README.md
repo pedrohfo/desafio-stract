@@ -51,7 +51,11 @@ python app.py
 As plataformas para serem usadas como parâmetro nas APIs são: meta_ads, ga4, tiktok_insights
 
 /
+
 /{{plataforma}}
+
 /{{plataforma}}/resumo
+
 /geral
+
 /geral/resumo
